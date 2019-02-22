@@ -33,9 +33,17 @@
     <link rel="stylesheet" href="plugins/scrollbar/css/jquery.mCustomScrollbar.css">
     <link rel="stylesheet" href="plugins/revolution-slider/rs-plugin/css/settings.css">
     <link rel="stylesheet" href="plugins/owl-carousel2/assets/owl.carousel.css">
+    <link rel="stylesheet" href="plugins/sky-forms-pro/skyforms/css/sky-forms-rtl.css">
+    <link rel="stylesheet" href="plugins/sky-forms-pro/skyforms/custom/custom-sky-forms-rtl.css">
+    <link rel="stylesheet" href="plugins/master-slider/quick-start/masterslider/style/masterslider.css">
+    <link rel='stylesheet' href="plugins/master-slider/quick-start/masterslider/skins/default/style.css">
+    <link rel="stylesheet" href="plugins/jquery-steps/css/custom-jquery.steps-rtl.css">
 
     <!-- Style Switcher -->
     <link rel="stylesheet" href="css/plugins/style-switcher.css">
+
+    <!-- CSS Page Style -->
+    <link rel="stylesheet" href="css/css-rtl/pages/log-reg-v3-rtl.css">
 
     <!-- CSS Theme -->
     <link rel="stylesheet" href="css/theme-colors/default.css" id="style_color">
@@ -91,8 +99,8 @@
                     <div class="col-sm-6">
                         <ul class="list-inline right-topbar pull-right">
                             <li><a href="#">Account</a></li>
-                            <li><a href="shop-ui-add-to-cart.html">Wishlist (0)</a></li>
-                            <li><a href="shop-ui-login.html">Login</a> | <a href="../../register">Register</a></li>
+                            <li><a href="../../addtocart">Wishlist (0)</a></li>
+                            <li><a href="../../login">Login</a> | <a href="../../register">Register</a></li>
                             <li><i class="search fa fa-search search-button"></i></li>
                         </ul>
                     </div>
@@ -159,7 +167,7 @@
                                             <a href="shop-ui-inner.html" class="btn-u btn-brd btn-brd-hover btn-u-sea-shop btn-block">View Cart</a>
                                         </div>
                                         <div class="col-xs-6">
-                                            <a href="shop-ui-add-to-cart.html" class="btn-u btn-u-sea-shop btn-block">Checkout</a>
+                                            <a href="../../addtocart" class="btn-u btn-u-sea-shop btn-block">Checkout</a>
                                         </div>
                                     </div>        
                                 </li>    
@@ -176,12 +184,12 @@
                                 Pages
                             </a>
                             <ul class="dropdown-menu">
-                                <li class="active"><a href="index.html">Shop UI</a></li>
-                                <li><a href="shop-ui-inner.html">Product Page</a></li>
-                                <li><a href="shop-ui-filter-grid.html">Filter Grid Page</a></li>
-                                <li><a href="shop-ui-filter-list.html">Filter List Page</a></li>
-                                <li><a href="shop-ui-add-to-cart.html">Checkout</a></li>
-                                <li><a href="shop-ui-login.html">Login</a></li>
+                                <li class="active"><a href="../../home">Shop UI</a></li>
+                                <li><a href="../../detail">Product Page</a></li>
+                                <li><a href="../../filtergrid">Filter Grid Page</a></li>
+                                <li><a href="../../filterlist">Filter List Page</a></li>
+                                <li><a href="../../addtocart">Checkout</a></li>
+                                <li><a href="../../login">Login</a></li>
                                 <li><a href="../../register">Register</a></li>
                             </ul>
                         </li>
@@ -580,20 +588,37 @@
 <script src="plugins/scrollbar/js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="plugins/revolution-slider/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
 <script src="plugins/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+<script src="plugins/sky-forms-pro/skyforms/js/jquery.validate.min.js"></script>
+<script src="plugins/master-slider/quick-start/masterslider/masterslider.min.js"></script>
+<script src="plugins/master-slider/quick-start/masterslider/jquery.easing.min.js"></script>
 <!-- JS Customization -->
 <script src="js/custom.js"></script>
 <!-- JS Page Level -->
 <script src="js/shop.app.js"></script>
 <script src="js/plugins/owl-carousel-rtl.js"></script>
-<script src="js/plugins/revolution-slider.js"></script><script>
+<script src="js/shop.app.js"></script>
+<script src="js/plugins/master-slider.js"></script>
+<script src="js/forms/product-quantity.js"></script>
+<script src="js/plugins/mouse-wheel.js"></script>
+<script src="js/plugins/revolution-slider.js"></script>
+<script src="js/plugins/mouse-wheel.js"></script>
+<script src="js/plugins/stepWizard.js"></script>
+<script src="js/forms/page_login.js"></script>
+
+<script>
     jQuery(document).ready(function() {
         App.init();
         App.initScrollBar();
         App.initParallaxBg();
-        OwlCarousel.initOwlCarousel();
-        RevolutionSlider.initRSfullWidth();     
+        OwlCarousel.initOwlCarousel();  
+        RevolutionSlider.initRSfullWidth();
+        MasterSliderShowcase2.initMasterSliderShowcase2();
+
     });
 </script>
+
+
+
 <!--[if lt IE 9]>
     <script src="plugins/respond.js"></script>
     <script src="plugins/html5shiv.js"></script>

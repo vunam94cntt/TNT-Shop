@@ -3,7 +3,8 @@
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!--> <html dir="rtl" lang="en"> <!--<![endif]-->  
 <head>
-    <title>Check Out | Unify - Responsive Website Template</title>
+    <base href="{{asset('public/myshop')}}/">
+    <title>TNT Shop | Add to cart</title>
 
     <!-- Meta -->
     <meta charset="utf-8">
@@ -12,38 +13,48 @@
     <meta name="author" content="">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="img/favicon.ico">
 
     <!-- Web Fonts -->
-    <!--  <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin'> -->
+    
 
     <!-- CSS Global Compulsory -->
-    <link rel="stylesheet" href="../assets/plugins/bootstrap/css/bootstrap-rtl.min.css">
-    <link rel="stylesheet" href="../assets/css/css-rtl/shop.style-rtl.css">
-    
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap-rtl.min.css">
+    <link rel="stylesheet" href="css/css-rtl/shop.style-rtl.css">
+
     <!-- CSS Header and Footer -->
-    <link rel="stylesheet" href="../assets/css/css-rtl/headers/header-v5-rtl.css">
-    <link rel="stylesheet" href="../assets/css/css-rtl/footers/footer-v4-rtl.css">
+    <link rel="stylesheet" href="css/css-rtl/headers/header-v5-rtl.css">
+    <link rel="stylesheet" href="css/css-rtl/footers/footer-v4-rtl.css">
 
     <!-- CSS Implementing Plugins -->
-    <link rel="stylesheet" href="../assets/plugins/animate.css">    
-    <link rel="stylesheet" href="../assets/plugins/line-icons/line-icons.css">
-    <link rel="stylesheet" href="../assets/plugins/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../assets/plugins/jquery-steps/css/custom-jquery.steps-rtl.css">
-    <link rel="stylesheet" href="../assets/plugins/scrollbar/css/jquery.mCustomScrollbar.css">
-    
+    <link rel="stylesheet" href="plugins/animate.css">    
+    <link rel="stylesheet" href="plugins/line-icons/line-icons.css">
+    <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="plugins/scrollbar/css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="plugins/revolution-slider/rs-plugin/css/settings.css">
+    <link rel="stylesheet" href="plugins/owl-carousel2/assets/owl.carousel.css">
+    <link rel="stylesheet" href="plugins/sky-forms-pro/skyforms/css/sky-forms-rtl.css">
+    <link rel="stylesheet" href="plugins/sky-forms-pro/skyforms/custom/custom-sky-forms-rtl.css">
+    <link rel="stylesheet" href="plugins/master-slider/quick-start/masterslider/style/masterslider.css">
+    <link rel='stylesheet' href="plugins/master-slider/quick-start/masterslider/skins/default/style.css">
+    <link rel="stylesheet" href="plugins/jquery-steps/css/custom-jquery.steps-rtl.css">
+
     <!-- Style Switcher -->
-    <link rel="stylesheet" href="../assets/css/plugins/style-switcher.css">
+    <link rel="stylesheet" href="css/plugins/style-switcher.css">
+
+    <!-- CSS Page Style -->
+    <link rel="stylesheet" href="css/css-rtl/pages/log-reg-v3-rtl.css">
 
     <!-- CSS Theme -->
-    <link rel="stylesheet" href="../assets/css/theme-colors/default.css" id="style_color">
+    <link rel="stylesheet" href="css/theme-colors/default.css" id="style_color">
 
     <!-- RTL Customization -->
-    <link rel="stylesheet" href="../assets/css/css-rtl/rtl.css">
+    <link rel="stylesheet" href="css/css-rtl/rtl.css">
 
     <!-- CSS Customization -->
-    <link rel="stylesheet" href="../assets/css/css-rtl/custom-rtl.css">
-</head>	
+    <link rel="stylesheet" href="css/css-rtl/custom-rtl.css">
+</head> 
+
 <body class="header-fixed">
 <div class="wrapper">
     <!--=== Header v5 ===-->   
@@ -88,8 +99,8 @@
                     <div class="col-sm-6">
                         <ul class="list-inline right-topbar pull-right">
                             <li><a href="#">Account</a></li>
-                            <li><a href="shop-ui-add-to-cart.html">Wishlist (0)</a></li>
-                            <li><a href="shop-ui-login.html">Login</a> | <a href="shop-ui-register.html">Register</a></li>
+                            <li><a href="../../addtocart">Wishlist (0)</a></li>
+                            <li><a href="../../login">Login</a> | <a href="../../register">Register</a></li>
                             <li><i class="search fa fa-search search-button"></i></li>
                         </ul>
                     </div>
@@ -109,8 +120,8 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html">
-                        <img id="logo-header" src="../assets/img/logo.png" alt="Logo">
+                    <a class="navbar-brand" href="../../home">
+                        <img id="logo-header" src="img/logo.png" alt="Logo">
                     </a>
                 </div>
 
@@ -123,7 +134,7 @@
                             <span class="badge badge-sea rounded-x">3</span>
                             <ul class="list-unstyled badge-open mCustomScrollbar" data-mcs-theme="minimal-dark">
                                 <li>
-                                    <img src="../assets/img/thumb/05.jpg" alt="">
+                                    <img src="img/thumb/05.jpg" alt="">
                                     <button type="button" class="close">×</button>
                                     <div class="overflow-h">
                                         <span>Black Glasses</span>
@@ -131,7 +142,7 @@
                                     </div>    
                                 </li>
                                 <li>
-                                    <img src="../assets/img/thumb/02.jpg" alt="">
+                                    <img src="img/thumb/02.jpg" alt="">
                                     <button type="button" class="close">×</button>
                                     <div class="overflow-h">
                                         <span>Black Glasses</span>
@@ -139,7 +150,7 @@
                                     </div>    
                                 </li>
                                 <li>
-                                    <img src="../assets/img/thumb/03.jpg" alt="">
+                                    <img src="img/thumb/03.jpg" alt="">
                                     <button type="button" class="close">×</button>
                                     <div class="overflow-h">
                                         <span>Black Glasses</span>
@@ -156,7 +167,7 @@
                                             <a href="shop-ui-inner.html" class="btn-u btn-brd btn-brd-hover btn-u-sea-shop btn-block">View Cart</a>
                                         </div>
                                         <div class="col-xs-6">
-                                            <a href="shop-ui-add-to-cart.html" class="btn-u btn-u-sea-shop btn-block">Checkout</a>
+                                            <a href="../../addtocart" class="btn-u btn-u-sea-shop btn-block">Checkout</a>
                                         </div>
                                     </div>        
                                 </li>    
@@ -164,7 +175,7 @@
                         </li>
                     </ul>
                     <!-- End Shopping Cart -->
-                    
+
                     <!-- Nav Menu -->
                     <ul class="nav navbar-nav">
                         <!-- Pages -->
@@ -173,13 +184,13 @@
                                 Pages
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a href="index.html">Shop UI</a></li>
-                                <li><a href="shop-ui-inner.html">Product Page</a></li>
-                                <li><a href="shop-ui-filter-grid.html">Filter Grid Page</a></li>
-                                <li><a href="shop-ui-filter-list.html">Filter List Page</a></li>
-                                <li class="active"><a href="shop-ui-add-to-cart.html">Checkout</a></li>
-                                <li><a href="shop-ui-login.html">Login</a></li>
-                                <li><a href="shop-ui-register.html">Register</a></li>
+                                <li class="active"><a href="../../home">Shop UI</a></li>
+                                <li><a href="../../detail">Product Page</a></li>
+                                <li><a href="../../filtergrid">Filter Grid Page</a></li>
+                                <li><a href="../../filterlist">Filter List Page</a></li>
+                                <li><a href="../../addtocart">Checkout</a></li>
+                                <li><a href="../../login">Login</a></li>
+                                <li><a href="../../register">Register</a></li>
                             </ul>
                         </li>
                         <!-- End Pages -->
@@ -225,13 +236,13 @@
                                                     <button type="button" class="btn-u btn-u-dark">Read More</button>
                                                 </div>
                                                 <div class="col-md-3 col-sm-4 col-xs-4 md-margin-bottom-30">
-                                                    <a href="#"><img class="product-offers img-responsive" src="../assets/img/blog/01.jpg" alt=""></a>
+                                                    <a href="#"><img class="product-offers img-responsive" src="img/blog/01.jpg" alt=""></a>
                                                 </div>
                                                 <div class="col-md-3 col-sm-4 col-xs-4 sm-margin-bottom-30">
-                                                    <a href="#"><img class="product-offers img-responsive" src="../assets/img/blog/02.jpg" alt=""></a>
+                                                    <a href="#"><img class="product-offers img-responsive" src="img/blog/02.jpg" alt=""></a>
                                                 </div>
                                                 <div class="col-md-3 col-sm-4 col-xs-4">
-                                                    <a href="#"><img class="product-offers img-responsive" src="../assets/img/blog/03.jpg" alt=""></a>
+                                                    <a href="#"><img class="product-offers img-responsive" src="img/blog/03.jpg" alt=""></a>
                                                 </div>
                                             </div><!--/end row-->
                                         </div><!--/end container-->
@@ -407,7 +418,6 @@
         </div>            
         <!-- End Navbar -->
     </div>
-    <!--=== End Header v5 ===-->
 
     <!--=== Breadcrumbs v4 ===-->
     <div class="breadcrumbs-v4">
@@ -449,7 +459,7 @@
                                 <tbody>
                                     <tr>
                                         <td class="product-in-table">
-                                            <img class="img-responsive" src="../assets/img/thumb/08.jpg" alt="">
+                                            <img class="img-responsive" src="img/thumb/08.jpg" alt="">
                                             <div class="product-it-in">
                                                 <h3>Double-Breasted</h3>
                                                 <span>Sed aliquam tincidunt tempus</span>
@@ -468,7 +478,7 @@
                                     </tr>
                                     <tr>
                                         <td class="product-in-table">
-                                            <img class="img-responsive" src="../assets/img/thumb/07.jpg" alt="">
+                                            <img class="img-responsive" src="img/thumb/07.jpg" alt="">
                                             <div class="product-it-in">
                                                 <h3>Vivamus ligula</h3>
                                                 <span>Sed aliquam tincidunt tempus</span>
@@ -487,7 +497,7 @@
                                     </tr>
                                     <tr>
                                         <td class="product-in-table">
-                                            <img class="img-responsive" src="../assets/img/thumb/06.jpg" alt="">
+                                            <img class="img-responsive" src="img/thumb/06.jpg" alt="">
                                             <div class="product-it-in">
                                                 <h3>Vivamus ligula</h3>
                                                 <span>Sed aliquam tincidunt tempus</span>
@@ -506,7 +516,7 @@
                                     </tr>
                                     <tr>
                                         <td class="product-in-table">
-                                            <img class="img-responsive" src="../assets/img/thumb/09.jpg" alt="">
+                                            <img class="img-responsive" src="img/thumb/09.jpg" alt="">
                                             <div class="product-it-in">
                                                 <h3>Vivamus ligula</h3>
                                                 <span>Sed aliquam tincidunt tempus</span>
@@ -817,7 +827,7 @@
                 <div class="row">
                     <!-- About -->
                     <div class="col-md-4 md-margin-bottom-40">
-                        <a href="index.html"><img class="footer-logo" src="../assets/img/logo-2.png" alt=""></a>
+                        <a href="index.html"><img class="footer-logo" src="img/logo-2.png" alt=""></a>
                         <p>About Unify dolor sit amet, consectetur adipiscing elit. Maecenas eget nisl id libero tincidunt sodales.</p>
                         <br>
                         <ul class="list-unstyled address-list margin-bottom-20">
@@ -965,22 +975,23 @@
 </div><!--/wrapper-->
 
 <!-- JS Global Compulsory -->           
-<script src="../assets/plugins/jquery/jquery.min.js"></script>
-<script src="../assets/plugins/jquery/jquery-migrate.min.js"></script>
-<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="plugins/jquery/jquery.min.js"></script>
+<script src="plugins/jquery/jquery-migrate.min.js"></script>
+<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
 <!-- JS Implementing Plugins -->
-<script src="../assets/plugins/back-to-top.js"></script>
-<script src="../assets/plugins/smoothScroll.js"></script>
-<script src="../assets/plugins/jquery-steps/build/jquery.steps.js"></script>
-<script src="../assets/plugins/scrollbar/js/jquery.mCustomScrollbar.concat.min.js"></script>
-<script src="../assets/plugins/sky-forms-pro/skyforms/js/jquery.validate.min.js"></script>
+<script src="plugins/back-to-top.js"></script>
+<script src="plugins/smoothScroll.js"></script>
+<script src="plugins/jquery-steps/build/jquery.steps.js"></script>
+<script src="plugins/scrollbar/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="plugins/sky-forms-pro/skyforms/js/jquery.validate.min.js"></script>
 <!-- JS Customization -->
-<script src="../assets/js/custom.js"></script>
+<script src="js/custom.js"></script>
 <!-- JS Page Level -->           
-<script src="../assets/js/shop.app.js"></script>
-<script src="../assets/js/forms/page_login.js"></script>
-<script src="../assets/js/plugins/stepWizard.js"></script>
-<script src="../assets/js/forms/product-quantity.js"></script><script>
+<script src="js/shop.app.js"></script>
+<script src="js/forms/page_login.js"></script>
+<script src="js/plugins/stepWizard.js"></script>
+<script src="js/forms/product-quantity.js"></script>
+<script>
     jQuery(document).ready(function() {
         App.init();
         Login.initLogin();
@@ -990,12 +1001,12 @@
 </script>
 
 <!--[if lt IE 9]>
-    <script src="../assets/plugins/respond.js"></script>
-    <script src="../assets/plugins/html5shiv.js"></script>
-    <script src="../assets/plugins/sky-forms-pro/skyforms/js/sky-forms-ie8.js"></script>
+    <script src="plugins/respond.js"></script>
+    <script src="plugins/html5shiv.js"></script>
+    <script src="plugins/sky-forms-pro/skyforms/js/sky-forms-ie8.js"></script>
 <![endif]-->
 <!--[if lt IE 10]>
-    <script src="../assets/plugins/sky-forms-pro/skyforms/js/jquery.placeholder.min.js"></script>
+    <script src="plugins/sky-forms-pro/skyforms/js/jquery.placeholder.min.js"></script>
 <![endif]-->
 
 </body>

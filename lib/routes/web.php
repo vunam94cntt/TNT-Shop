@@ -17,3 +17,9 @@ Route::get('/', function () {
 
 Route::get('home','IndexController@home');
 Route::get('register','IndexController@register');
+Route::get('login','IndexController@login');
+Route::get('detail','IndexController@detail');
+Route::get('filtergrid','IndexController@filtergrid');
+Route::get('filterlist','IndexController@filterlist');
+Route::get('addtocart','IndexController@addtocart');
+
